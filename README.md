@@ -1,1 +1,1 @@
-Hello! Iam learning Git and Github from w3school. For that I created this file and I am going to use it.
+Hello! When I am learning git and github I created this file. This is a temporary file.
