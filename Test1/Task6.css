@@ -1,0 +1,13 @@
+body{
+    background-color: rgba(193, 250, 231, 0.884);
+}
+
+.heading{
+    text-align: center;
+    font-size: 25px;
+}
+
+.logo{
+    height: 200px;
+    width: 300px;
+}

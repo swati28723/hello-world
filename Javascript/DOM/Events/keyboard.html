@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event</title>
+</head>
+<body>
+    <input type="text" id="message">
+
+    <!-- <input id="myInputField" type="text"> -->
+    <script>
+        // document.body.addEventListener("keydown", (ev) => {
+        //     console.log(ev.key);//with the help of this we can know about which key pressed by user
+        // })
+
+        // document.body.addEventListener("keyup", (ev) =>{
+        //     console.log("dcode");//keyup is same as keydown, keyup only fires up when you let go
+        // })
+
+        // document.body.addEventListener("keyup", (ev) =>{
+        //     console.log("dcode");//not recommonded for use
+        // })
+
+        // const myInputField = document.getElementById("myInputField");
+
+        // myInputField.addEventListener("input", () =>{//this is not a keyboard event
+        //     console.log("Hello");
+        // })
+
+        // document.body.addEventListener("keydown", (ev) => {
+        //      console.log(ev)
+        // })
+
+        // document.body.addEventListener("keyup", (ev) => {
+        //     if (ev.key == "a" && ev.ctrlKey){
+        //         console.log("You pressed CTRL + A");
+        //     }
+        // });
+
+        // let textBox = document.getElementById('message');
+        // textBox.addEventListener('keydown', (event) => {
+        //     console.log(`key=${event.key},code=${event.code}`);
+
+        // });
+
+        let msg = document.getDocumentById('#message');
+
+        msg.addEventListener("keydown", (event) => {
+            // handle keydown
+        });
+
+        msg.addEventListener("keypress", (event) => {
+            // handle keypress
+        });
+
+        msg.addEventListener("keyup", (event) => {
+            // handle keyup
+        });
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .clock-container {
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .clock-container img {
+    width: 50px;
+    margin-right: 25px;
+    height: 50px;
+    /* border-radius: 50px; */
+
+  }
+
+  .user-paragraph textarea {
+    width: 70%;
+    height: 150px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+  }

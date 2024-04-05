@@ -1,0 +1,44 @@
+**bootstrap embed youtube video**
+With the help of this we can add video to our web page. copy this and paste it in where you want to add video. 
+link - '<div class="embed-responsive embed-responsive-16by9">
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+	</div>'
+If you want to any video just open it in your browser, right click on it and choose 'copy embed code'. Then remove iframe tag whole line and past copied code their.
+
+
+
+
+**Font awesome**
+I created account on this site.
+It is allow us to use various symbol for free.
+Just go to symbols which are free, copy i tag '<i class="fa-solid fa-house"></i>' and as it is where you want to give or use symbol.
+And include this link - <script src="https://kit.fontawesome.com/2045edaf45.js" crossorigin="anonymous"></script>
+
+
+
+
+**Freepik**
+It is the website where you can find various images
+
+
+
+
+**Bootstrap**
+If you want to use anything related to bootstrap, go to its official website and use from there.
+If you want to use bootstrap in your code, so first include its link from its official website and also choose version.
+
+
+
+
+
+**Navbar**
+If you want to use Navbar, go to bootstrap official website, click on Navbar, then choose Nav, copy-paste its code and use it.
+You can also modify its code and include your own items. For eg:- you can add a logo instead of Navbar text. You have to just replace Navbar text with logo(image) link.
+
+
+
+
+**Carousel**
+A slideshow component for cycling through elements—images or slides of text—like a carousel.
+If you want to insert many images at a one place and chage after every click, then you can use Carousel. 
+Go to bootstrap official website, choose Carousel, choose how you want to display your images and then copy-paste its code and use it. And do not forget to include images links. You can change code according to you.

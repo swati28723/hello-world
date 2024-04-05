@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Input with Local Storage</title>
+</head>
+<body>
+
+<label for="textInput">Enter Text:</label>
+<input type="text" id="textInput">
+
+<script>
+// Retrieve the input element
+const inputElement = document.getElementById('textInput');
+
+// Check if there's already a value stored in localStorage
+const storedText = localStorage.getItem('userText');
+
+// If there is, set the input value to that stored value
+if (storedText) {
+    inputElement.value = storedText;
+}
+
+// Add an event listener to listen for changes in the input field
+inputElement.addEventListener('input', function() {
+    // When the input value changes, store it in localStorage
+    localStorage.setItem('userText', inputElement.value);
+});
+
+</script>
+
+</body>
+</html>

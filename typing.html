@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Typing Test</title>
+  <script src="typing.js" defer></script>
+  <link rel="stylesheet" href="typing.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1 class="heading">Speed Typing Test</h1>
+    <p>On your fingers, let's get set, Go!</p>
+
+    <div class="clock-container">
+      <img src="https://m.media-amazon.com/images/I/618qmq01ywL._AC_UF894,1000_QL80_.jpg" alt="Clock">
+      <span class="seconds" id="timer">0</span> seconds      
+    </div>
+
+    <div class="paragraphs-container">
+        <div class="original-paragraph" id="original-paragraph">
+          <p>Do not give your attention to what others do or fail to do; give it to what you do or fail to do.</p>
+        </div>
+
+        <div class="user-paragraph">
+            <textarea class="userText" id="input-text" placeholder=" Type the paragraph here..."></textarea>
+        </div>
+    </div>
+
+    <p class="result" id="result"></p>
+    <div class="error-message" id="error-message"></div> 
+
+    <div class="buttons-container">
+      <button class="submit" id="submit-btn">Submit</button>
+      <button class="reset" id="reset-btn">Reset</button>
+    </div>
+
+    
+  </div>
+
+</body>
+</html>
+

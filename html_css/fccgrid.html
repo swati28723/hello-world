@@ -1,0 +1,127 @@
+<!--  In CSS Grid, the parent element is referred to as the container and its children are called items. -->
+<!-- The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning. -->
+<!-- If you want to use any of the CSS grid properties, first you need to use 'display: grid;' It has to be mentioned. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Grid</title>
+</head>
+<body>
+    <style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+      
+        .container {
+          font-size: 40px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          /* Add Columns with grid-template-columns */
+          /* grid-template-columns: 100px 100px 100px; */
+
+          /* Add Rows with grid-template-rows */
+          /* grid-template-rows: 50px 50px; */
+
+          /* Use CSS Grid units to Change the Size of Columns and Rows 
+            fr: sets the column or row to a fraction of the available space,
+            auto: sets the column or row to the width or height of its content automatically,
+            %: adjusts the column or row to the percent width of its container.*/
+          /* grid-template-columns: 1fr 100px 2fr; */
+          
+          /* Create a Column Gap Using grid-column-gap */
+          /* grid-column-gap: 10px; */
+
+          /* Create a Row Gap using grid-row-gap */
+            /* grid-row-gap: 20px; */
+        
+          /* Add Gaps Faster with grid-gap*/
+          grid-gap: 10px 10px;
+
+          /* Align All Items Horizontally using justify-items */
+            /* justify-items: center;; */
+            
+          /* Align All Items Vertically using align-items */
+            /* align-items: end; */
+        }
+
+        .d5{
+             /* Use grid-column to Control Spacing */
+          grid-column: 2/4;
+
+           /* Use grid-row to Control Spacing */
+           grid-row: 2/4;
+
+           /* Place Items in Grid Areas Using the grid-area Property */
+           grid-area: footer;
+        }
+
+        /* .d2{
+           Align an Item Horizontally using justify-self
+              start: aligns the content at the left of the cell,
+              center: aligns the content in the center of the cell,
+              end: aligns the content at the right of the cell.
+              justify-self: center;
+        } */
+
+        /* .d3{
+           Align an Item Vertically using align-self. Same as justify-self 
+           align-self: end;
+        } */
+      </style>
+      
+      <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+      </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- understand -->
+<!-- Reduce Repetition Using the repeat Function
+    grid-template-rows: repeat(100, 50px);
+    grid-template-columns: repeat(2, 1fr 50px) 20px;
+    grid-template-columns: 1fr 50px 1fr 50px 20px;
+ -->
+
+ <!-- Limit Item Size Using the minmax Function
+      grid-template-columns: 100px minmax(50px, 200px);
+ -->
+
+ <!-- Create Flexible Layouts Using auto-fill
+      repeat(auto-fill, minmax(60px, 1fr));
+  -->
+
+  <!-- Create Flexible Layouts Using auto-fit
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); -->
+
+    <!-- Use Media Queries to Create Responsive Layouts
+        grid-template-areas:
+        "header header"
+        "advert content"
+        "footer footer"; -->
+
+        <!-- Create Grids within Grids
+ -->
+
+<!--Do not understand -->
+<!-- Divide the Grid Into an Area Template 
+  grid-template-areas:
+  "header header header"
+  "advert content content"
+  "advert footer footer"; -->
+
+  <!-- Use grid-area Without Creating an Areas Template 
+    item1 { grid-area: 1/1/2/4; }
+    grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;-->

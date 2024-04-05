@@ -1,0 +1,52 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(225, 209, 240);
+    background-size: cover;
+    align-items: center;
+}
+.heading{
+    color: rgb(87, 21, 150);
+}
+.mainContainer{
+    background-color: rgb(240, 233, 247);
+    border: gray solid 1px;
+    text-align: center;
+    height: 50vh;
+    width: 80vh;
+    border-radius: 10px;
+}
+.inputBox{
+    height: 30vh;
+    width: 70vh;
+    border: gray solid 1px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.button{
+    height: 40px;
+    width: 70px;
+    font-size: larger;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+#resetButton{
+    background-color: white;
+    color: black;
+}
+.img{
+    width : 50px ;
+    height : 50px;
+    border-radius: 50px;
+}
+.clock{
+    display: flex;
+}
+.result{
+    display: none;
+}

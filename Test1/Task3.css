@@ -1,0 +1,59 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+.bg{
+    height: 600px;
+    width: 500px;
+}
+
+.bgimage{
+    background-image: url(https://img.freepik.com/free-photo/woman-holding-various-shopping-bags-copy-space_23-2148674122.jpg?t=st=1708944284~exp=1708947884~hmac=ff95b670dd66f5234508aeb795fb92c4c252118bd04b8b84aac18d54e6069e3a&w=826);
+    background-size: cover;
+    height: 150px;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: right;
+}
+
+.paragraph{
+    color: white;
+    height: 100px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.text{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.textheading{
+    color: palevioletred;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo{
+    height: 50px;
+    width: 65px;
+    border-radius: 5px 5px 10px 10px;
+    margin-bottom: 40px;
+}
+
+.aboutstore{
+    height: 400px;
+    width: 350px;
+    margin-left: 40px;
+}
+
+.aboutstoreparagraph{
+    margin-bottom: 20px;
+    font-size: 13px;
+}

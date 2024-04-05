@@ -1,0 +1,25 @@
+.bg{
+    background-image: url(https://img.freepik.com/free-photo/tropical-beach_74190-188.jpg?t=st=1708773824~exp=1708777424~hmac=8de761a2bfa196f2c408d6d4648bc3f2bb151c91894f9c06889ed8070aedd732&w=740);
+    background-size: cover;
+    height: 100vh; /*vh = viewport height, vw = viewport width */
+    padding: 10px;
+    overflow: auto;
+}
+
+.abc{
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    height: 170px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.image{
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: right;
+    
+}

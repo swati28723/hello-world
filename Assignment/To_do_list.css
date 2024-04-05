@@ -1,0 +1,43 @@
+.bg{
+    background-image: url(backgroundimage.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.heading{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.paragraph{
+    color: white;
+    text-align: center;
+}
+
+.heading2{
+    color: white;
+}
+
+.paragraph2{
+    color: white;
+}
+
+.btn{
+    background-color: #f5bd24;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 0;
+    margin: 0;
+    border: solid 2px rgb(216, 211, 211);
+}
+
+.underlinepart{
+    color: white;
+    text-align: center;
+}
+
+.btnbox{
+    text-align: center;
+}

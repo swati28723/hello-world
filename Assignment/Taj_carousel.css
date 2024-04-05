@@ -1,0 +1,24 @@
+.bg{
+    background-image: url(https://t3.ftcdn.net/jpg/02/58/77/66/240_F_258776685_1TaW3IqXNkXiNl7QlvNVH0TcF5YR2Odu.jpg);
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+}
+
+.abc{
+    background-color: white;
+    height: 530px;
+    width: 400px;
+    margin: 10px;
+}
+
+.image{
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.efg{
+    padding: 10px;
+}

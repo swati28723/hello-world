@@ -1,0 +1,61 @@
+selector{
+    property1:value1;
+    property2: value2;
+}
+
+Selector is used to select one or more elements to which we want to apply the style
+Property means the CSS properties which we want to apply to the selector. Example: font-color, background-color, etc.
+Values correspond to the specific style properties for the selected elements. Example:red, 14px, etc
+
+1. Element/Type selectors:- They are used to style all the elements of a particular type at once 
+ 
+2. Id selectors:- t
+They are used to style only a single element of a particular type
+We cannot assign a unique id to multiple elements as it is incorrect
+Naming convention for unique id:-
+1. It can have alphanumeric characters or hyphen or underscore.
+2. It cannot have any special characters
+3. The name cannot start with a number
+4. It can start with a underscore, hyphen, letters
+
+3. Class selectors:- They are used when we want to style more than one element. If we want to give same style to different or same element
+
+4. Combination selectors:- With the help of class selector we can give style to different type element. but if we want to give same style only same type element then we use combinition selector. which combine them and give style to them
+
+*Hierarchy in html: one element is child to another element when it is directly inside the other element 
+                    one element is dicendant to another element when it is directly or indirectly present inside the other element
+
+5. Child selectors:- We use the concept of parent-child hierarchy to select any html element
+
+6. Descendant selectors:- we use the concept of descendants to select the html elemments
+
+7. Grouping selectors:- They help us to apply the same style to multiple section of elements
+
+8. Atribute selector:- it is used to give style to input text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

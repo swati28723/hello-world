@@ -1,0 +1,52 @@
+.bg{
+    height: 100vh;
+    overflow: auto;
+    align-items: center;
+    padding: 10px;
+}
+
+.container{
+    background-color: rgb(198, 232, 243);
+    width: 650px;
+    align-self: center;
+    padding: 10px;
+}
+.bgimage{
+    background-image: url(https://t4.ftcdn.net/jpg/02/26/17/77/240_F_226177719_CoYfU2JuJMQSc99cTPMIVFO4aZ7lSdfV.jpg);
+    height: 35vh;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.heading{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.abc{
+    background-color: white;
+    height: 250px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.abc1{
+    background-color: white;
+    height: 250px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+ 
+
+
+
+
+
+
+

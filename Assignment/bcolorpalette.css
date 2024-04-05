@@ -1,0 +1,15 @@
+.color-palette-heading{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.color-box{
+    padding: 10px;
+}
+
+.color-name{
+    color: white;
+    font-size: 20px;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For practice</title>
+    <script src="dt.js" defer></script>
+    <link rel="stylesheet" href="dt.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="heading">Speed Typing Test</h1>
+        <p>On your fingers, let's get set, Go!</p>
+    
+        <div class="clock-container">
+          <img src="https://m.media-amazon.com/images/I/618qmq01ywL._AC_UF894,1000_QL80_.jpg" alt="Clock">
+          <span class="seconds" id="timer">0</span> seconds      
+        </div>
+
+        <div class="user-paragraph">
+            <textarea class="userText" id="input-text" placeholder=" Type the paragraph here..."></textarea>
+        </div>
+    </div>
+</body>
+</html>
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .clock-container {
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .clock-container img {
+    width: 50px;
+    margin-right: 25px;
+    height: 50px;
+    /* border-radius: 50px; */
+
+  }
+
+  .user-paragraph textarea {
+    width: 70%;
+    height: 150px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+  }

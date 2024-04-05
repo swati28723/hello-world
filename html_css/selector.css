@@ -1,0 +1,44 @@
+/* This is a element type selector whic is used to give 1 style to all */
+p{
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+/* This is a ID selector. Start with #*/
+#abc{
+    color: rgb(148, 10, 67);
+    font-size: 50px;
+}
+
+/* This is a class selector. Start with dot (.) */
+.xyz{
+    color: blue;
+    font-size: 50px;
+}
+
+/* This is a combination selector which are combining only p type element based on class and giving style */
+p.xyz{
+    color: blueviolet;
+    font-size: 25px;
+}
+
+/* This is a child selector */
+p > a{
+    color: brown;
+}
+
+/* this is a descendant selector */
+div a{
+    color: black;
+}
+
+/* This is a grouping selector */
+p, h1{
+    color: blueviolet;
+}
+
+/* This ia a atribute selector */
+input[type = "text"]{
+    color: brown;
+}

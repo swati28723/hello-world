@@ -1,0 +1,50 @@
+.bg{
+    background-color: rgb(6, 6, 68);
+    display: flex;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+.bgimage{
+    background-image: url(https://as1.ftcdn.net/v2/jpg/03/22/38/94/1000_F_322389495_jBeUMhoBeVanpkqIv6Lh0DuX3qKk4wqd.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.heading{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.paragraph{
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+
+.btn{
+    background-color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo-name{
+    color: white;
+    font-weight: bold;
+}
+
+.key{
+    color: white;
+}
+
+

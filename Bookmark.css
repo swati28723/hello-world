@@ -1,0 +1,84 @@
+.blue{
+    background-color: rgb(35, 35, 78);
+    color: white;
+    margin: 1%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.hello{
+    font-size: 20px;
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+.name{
+    padding-left: 2%;
+    padding-bottom: 3%;
+}
+
+.temp{
+    background-color: white;
+    border-radius: 25px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    padding: 3%;
+    color: black;
+    text-align: center;
+}
+
+.transparent{
+    background-color: aliceblue;
+    border-radius: 20px;
+    height: 50%;
+    width: 30%;
+}
+
+.sitename{
+    padding: 5% 0% 0% 5%;
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+}
+
+.inpt{
+    padding: 2% 0% 0% 5%;
+    margin: 2% 0% 0% 5%;
+    width: 90%;
+}
+
+.button{
+    text-align: right;
+    padding: 5%;
+}
+
+.btn{
+    background-color: rgb(55, 55, 116);
+    color: white;
+    border: solid;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; 
+    color: black;
+    font-weight: bold;
+}
+
+
+.error {
+    display: none;
+    color: red; /* Set color to red */
+    margin: 2% 0% 0% 5%;
+}
+
+.btn:hover {
+    background-color: rgb(9, 20, 168); 
+    border: solid rgb(153, 153, 252);
+}

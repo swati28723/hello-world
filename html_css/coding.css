@@ -1,0 +1,16 @@
+.bg{
+    background-image: url(https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/5%20Best%20Coding%20Programs%20for%20Aspiring%20Programmers1650304687858345.jpg);
+    background-size: cover;
+    height: 100vh;    
+}
+
+.paragraph{
+    background-color: transparent;
+    color: white;
+    font-size: 50px;
+    border: solid 5px rgb(61, 247, 61);
+    height: 310px;
+    width: 300px;
+    font-weight: bold;
+    margin-top: 13%;
+}

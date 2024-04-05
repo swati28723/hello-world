@@ -1,0 +1,75 @@
+h1{
+    /* default value of color is black */
+    color:rebeccapurple;
+
+    /* default value of background-color is transparent means no color */
+    background-color: rgb(227, 236, 233);
+}
+
+p{
+    /* Choose only those fonts that are supported by the browser
+        Different browsers suport different font types, so choose a font-family that is supported by all the browsers
+        Use Google fonts
+    */
+    font-family: 'Times New Roman', Times, serif;
+
+    /* Used to specify the font size of a text and its default value is 16px*/
+    font-size: 25px;
+
+    /* font-weight used to specify a bold text and default value for paragraph normal, for heading bold*/
+    font-weight: bold;
+
+    /* font-style used to specify a italic text */
+    font-style: italic;
+
+    /* text-decoration used to add or remove an underline from a text and its default value is none except <a> */
+    text-decoration: underline;
+
+    /* text-align used to specify the horizontal alignment of a text and its deault value for most element is left*/
+    text-align: center;
+
+    /* line-height used to specify the height of a text line */
+    line-height: 10;
+
+    /* border-style used to specify a style to the border of an element. solid, dotted, dashed, none and default value none. it gives border to space that is occupied by the text*/
+    border-style: solid;
+
+    /* border-width used to specify width to the border of an element and the default value is 3 pixels and does not work it the border style is none*/
+    border-width: 6px;
+
+    /* border-color used to specify a color to the border of an element, it also not work if border style none*/
+    border-color: rosybrown;
+}
+
+/* Border element have four subproperties that is border-top, border-bottom, border-left, border-right */
+.a{
+    background-color: aliceblue;
+    border-left: solid 5px blue;
+}
+
+.b{
+    background-color: azure;
+    border-right: solid 5px red;
+}
+
+.c{
+    background-color: bisque;
+    border-top: solid 5px gray;
+}
+
+.d{
+    background-color: beige;
+    border-bottom: solid 5px maroon;
+}
+/* Padding is the space around the content of an element inside its border and default value is 0px */
+.a, .b, .c, .d{
+    line-height: 3;
+}
+
+.a, .b{
+    padding: 10px;
+}
+
+.a{
+    padding: 20px 50px 30px 20px;
+}

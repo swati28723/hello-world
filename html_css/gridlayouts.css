@@ -1,0 +1,79 @@
+*{
+    box-sizing:  border-box;
+}
+
+.row{
+    border: solid 1px red;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    border: solid 2px black;
+    display: inline-block;
+    height: 150%;
+    width: 33.33%;
+}
+
+.col2{
+    border: solid 2px black;
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.row2{
+    border: solid 2px blue;
+    height: 50%;
+}
+
+.container{
+    border: solid 1px black;
+}
+
+.abc{
+    float: right;
+    border: solid 3px red;
+    height: 50px;
+    width: 200px;
+}
+
+.second{
+    border: solid 3px black;
+    float: right;
+}
+
+.third{
+    border: solid 3px black;
+    float: left;
+}
+
+.box{
+    border: dotted 2px rgb(96, 139, 168);
+    width: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.box > div{
+    border: solid 2px rgb(96, 139, 168);
+    border-radius: 5px;
+    width: 100px;
+}
+
+.one{
+    flex-basis: 50px;
+}
+
+.two{
+    flex-basis: auto;
+}
+
+.three{
+    flex-basis: 200px;
+}

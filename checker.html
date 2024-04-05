@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="input">
+        <input type="number" id="inputnumber"><br>
+        <button onclick="checker()">Check</button>
+        <p id="paragraph"></p>
+        <button id="resetButton" style="display: none;">Reset</button>
+    </div>
+    
+    <script>
+        let num = Math.ceil(Math.random() * 100); 
+        let attempts = 0;
+        const maxAttempts = 10; 
+    
+        function checker() {
+            let inputnumber = document.getElementById("inputnumber");
+            let inputvalue = parseInt(inputnumber.value); 
+            let paragraph = document.getElementById("paragraph");
+    
+            if (inputvalue < 1 || inputvalue > 100) {
+                paragraph.textContent = "Please enter a valid number between 1 and 100";
+            }
+    
+            attempts++;
+    
+            if (inputvalue === num) 
+            {
+                paragraph.textContent = "Congratulations! You guessed the number correctly in " + attempts + " attempts.";
+            } 
+            else 
+            {
+                if (attempts >= maxAttempts) 
+                {
+                    paragraph.textContent = "You don't know binary search. The correct number was " + num;
+                } 
+                else 
+                {
+                    if (inputvalue < num) 
+                    {
+                        paragraph.textContent = "Try a higher number. Attempts left: " + (maxAttempts - attempts);
+                    } 
+                    else 
+                    {
+                        paragraph.textContent = "Try a lower number. Attempts left: " + (maxAttempts - attempts);
+                    }
+                }
+            }
+    
+            inputnumber.value = "";
+    
+            document.getElementById("resetButton").style.display = "inline";
+        }
+    
+        document.getElementById("resetButton").onclick = function() {
+            document.getElementById("paragraph").textContent = "";
+            this.style.display = "none";
+        };
+    </script>
+    
+</body>
+</html>

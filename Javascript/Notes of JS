@@ -1,0 +1,44 @@
+Computer:- It is an electronic device that manipulate information or data.
+
+computers usea combination of hardware and software.
+
+Hardware:- Hardware is any physical part of the computer which includes the internal component and external parts like the monitor and keboard.
+
+Software: Software is any set of instruction that tells the hardware what to do sucha as  web browser media player or word processor.
+
+Servers sends information to other computers on a network. It is used in many offices to store and share files.
+
+Compiler:- Takes all the Code in One go, Converts Code in Machine Language, Gives to system for processing, shares Output with user. If error in 5th line, program wont get executed. eg., c, c++
+
+Interpreter:- Takes One instruction at time, Converts First instruction to machine language, gives to system for processing & generate output, converts second instruction and so on. If error found, stop execution from that point. If error found in 5th line it will give output of first 4 line. eg., python
+
+**Browser vs Node.js**
+In the browser, most of the time what you are doing is interacting with the Dom, or other Web Platorm APIs like Cookies. You don't have the document, window and all the other objects that are provided by the browser.
+
+In the browser, we don't have all the nice APIs that Node.js provides through its modules. For example the filesystem access functionality.
+
+With Node.js, you are at the mercy of what the users choose
+****************************************************************
+
+NPM:- It stands for Node Package Manager. 
+It’s a library and registry for JavaScript software packages.
+an online repository for the publishing of open-source Node.js projects
+a command-line utility for interacting with said repository helping with installing packages and managing package versions and dependencies
+
+npm test—to run your tests
+npm build—to build your project
+npm start—to run your project locally
+***************************************************************
+
+Node.js:- Node.js is a runtime environment that allows you to run JavaScript on the backend. 
+
+Runtime environment:- A runtime environment is like a small operating system. It provides all the functionality needed for a program to run.
+***************************************************************
+Variables:- Variables are Containers for Storing Data.
+Javascript variables can be declared in 4 ways:
+	1. Autmatically:- It means without mentioning any variable name. eg., x = 1, y = 4, c = x + y;
+	
+	2. Using var:- It can redeclared and reassigned
+	3. Using let:- It can reassigned and not redeclared
+	4. Using const
+	

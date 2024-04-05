@@ -1,0 +1,53 @@
+.heading{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.btndiv{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.btnn{
+    padding: 3% 2% 3% 2%;
+    border-radius: 10px;
+}
+
+.bgtext{
+    margin-top: 5%;
+    background-color: rgb(34, 29, 29);
+    margin: 5%;
+    border-radius: 20px;
+}
+
+.text{
+    padding: 10px ;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.para{
+    text-align: center;
+    font-size: 25px;
+}
+
+.btnn1{
+    background-color: #e0e0e0;
+}
+
+.btnn2{
+    background-color: #6fcf97;
+}
+
+.btnn3{
+    background-color: #56ccf2;
+}
+
+.btnn4{
+    background-color: #bb6bd9;
+}
+
+.blue{
+    color: rgb(67, 175, 224);
+}

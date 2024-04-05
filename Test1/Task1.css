@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(178, 248, 225);
+}
+
+.box1{
+    background-color: rgb(187, 143, 228);
+    height: 150px;
+    width: 150px;
+    color: white;
+}
+
+.box2{
+    background-color: rgb(159, 74, 238);
+    height: 150px;
+    width: 150px;
+    color: white;
+}

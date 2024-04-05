@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Headings HTML Tag used to define heading on a web page. There are 6 heading tags  -->
+    <h1>This is biggest heading </h1>
+    <h2>This is small than h1</h2>
+    <h3>This is small than h2</h3>
+    <h4>This is small than h3</h4>
+    <h5>This is small than h4</h5>
+    <h6>This small than h5 and smallest heading</h6>
+
+    <!-- Paragraph Tag(<p>) used to define paragraphon a web page -->
+    <p>Hey! How are you?</p>  
+
+    <!-- Break Tag (<br>) used to define a line break on a web page. Also called selfclosing tag -->
+    <p>Hey!<br>How are you?</p>
+
+    <!-- Horizontal rule <hr/> used to create a horizontal line on a web page. It's also a selfclosing tag-->
+    <hr/>
+
+    <!-- Link/Anchor <a> used to create a hyperlink on a web page 'target="_blank" - it is used when we want to open link in a new tab'-->
+    <a href="https://www.google.co.in/" target="_blank">Google</a>
+
+    <!-- Division <div> used to create divisions or sections on a web page. Uswd to crate manageable structure in our html code -->
+    <div>
+        <h1>Keep smile even when in trouble</h1>
+    </div> 
+
+    <!-- Span <span> used to sstyle the content on  a web page -->
+    <span>This is a span</span>
+
+    <!-- Bold <b> and <strong> Formatting tags-->
+    <p>This is <b>Bold</b> and This is <strong>Strong</strong></p>
+
+    <!-- Italic <i> and Emphasized tag <em> -->
+    <p>This is <i>Itallic</i> and This is <em>Emphasized</em></p>
+    
+    <!-- Underlined Tag <u> -->
+    <p>This is <u>Underlined</u></p>
+
+    <!-- Image tag <img>  used to add an image ona web page-->
+    <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Click me">
+
+    <!-- Lists A list is a collection of related items
+    There are two types of list :-
+    1. Ordered lists:- An ordered list is a collection of related of items in some particular order. 
+    <ol> used to create ordered list
+    <li> usedto add a list item 
+    type="" - It is a marker, that is used to assign values to type attribute to use a particular order type like numbers alphabates
+    type="1" It is used assign numeric value
+    type="a" It is used assign small alphabate value
+    type="A" It is used assign Capital alphabate alue
+    type="I" It is used assign capital roman value
+    type="i" It is used assign small roman value
+
+    2. Unordered list:- An unordered list is a collection of related items with no special order or sequence
+    <ul> used to create unordered list
+    by default it gives bullets to the list
+    Same as ordered list we can change type of bullets byu using 'circle, square' 
+    
+    Description Lists <dl> A discription list is a collection of items with a description for each item. It is ideal for any ket-value listing, like a glossary or a dictionary. 
+    <dt> define term
+    <dd> define detail-->
+
+    <ol type="a">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+
+    <ul type="circle">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <ol>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <dl>
+        <dt>Apple</dt>
+        <dd>I am a fruit</dd>
+        <dt>Brinjal</dt>
+        <dd>I am a vegetable</dd>
+    </dl>
+
+    <!-- Tables <table> used to create tables
+    <tr> used to create table row
+    <td> used to fill data inside row 
+    <th> used to give table heading in bold
+    <th> = <td><b>content<b><td>
+    <border=""> used to set the width of the border in pixels around the table and around each cell
+    cellspacing:-used to specify the space between two cells, vertically or horizontally in pixels.
+    by default value of border and cellspacing is 0, cellpadding is 1
+    cellpadding:- used to specify the space between the cell wall and the cell cotent in pixels
+    height:- used to secify the height of the table in pixels
+    width:- used to specify the width of the table in pixels
+    colspan:- used to span more than one column
+    rowspan:- used to span more than one row-->
+
+    <table border="5" cellspacing="0" cellpadding="3" height="200" width="500">
+        <tr>
+            <td>Name</td>
+            <td>NickName</td>
+            <td>Relation</td>
+            <td rowspan="6">Father, Mother and Brother</td>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+            <th>NickName</th>
+            <th>Relation</th>
+        </tr>
+
+        <tr>
+            <td>Vinod</td>
+            <td>vinu</td>
+            <td>Bachha</td>
+        </tr>
+
+        <tr>
+            <td>Kavita</td>
+            <td>kavi</td>
+            <td>Bachhii</td>
+        </tr>
+
+        <tr>
+            <td>Saurav</td>
+            <td>sauri/dadya</td>
+            <td>Pilu</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Don't get confused. They all are my family.</td> 
+            <!-- 3 means that a single cell will span across 3 cells. This means that 3 columns merge together  -->
+        </tr> 
+    </table>
+    <br>
+    <!-- Forms <forms> used to collect user information -->
+    <form>
+        Email<input type="text" name="emai"/>
+        Password<input type="password" name="password"/><br>
+
+        <input type="radio" name="gender" value="male"/>Male
+        <input type="radio" name="gender" value="female"/>Female
+        <input type="radio" name="gender" value="other"/>Other<br>
+
+        <input type="checkbox" name="interest" value="cricket"/>Cricket
+        <input type="checkbox" name="interest" value="football"/>Football
+        <input type="checkbox" name="interest" value="Basketball"/>Basketball
+        <input type="checkbox" name="interest" value="chess"/>Chess
+
+        <select type="city">
+            <onption value="kolkata">Kolkata</onption>
+            <onption value="Delhi">Delhi</onption>
+            <onption value="Mumbai">Mumbai</onption>
+            <onption value="Banglore">Banglore</onption>
+            <onption value="Outstaion">Outstation</onption>
+        </select>
+
+        <textarea name="address" rows="6" cols="50">
+            Write your address...</textarea>
+        <br>
+        <input type="submit" name="submit" value="Submit"/>
+    </form>
+    </body>
+</html>
