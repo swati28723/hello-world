@@ -39,10 +39,22 @@ h1 {
 
 
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .menu {
         display: flex;
         flex-direction: column;
         list-style: none;
+    }
+} */
+
+
+/* .p1{
+    color: pink important ;
+    } */
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .header {
+        font-size: 18px;
     }
 }
