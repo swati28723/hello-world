@@ -1,0 +1,242 @@
+browser - kon
+dom - kisme
+client-server comunication
+
+**Form using onclick
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event in Javascript</title>
+    <script src="temp.js" defer></script>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div class="container">
+         <h1 class="heading">Counter</h1>
+        <p id="para">0</p>
+        <div class="btn">
+            <button onclick="onDecreament()">Decrease</button>
+            <button onclick="onReset()">Reset</button>
+            <button onclick="onIncreament()">Increase</button>
+        </div> -->
+        <!-- Enter your Name
+        <input type="text" id="nameinput"><br>
+        Enter your Password 
+        <input type="password">
+
+       <button onclick="signn()">Sign in</button>
+        
+
+        <p id="result"></p>
+    </div>
+</body>
+</html> -->
+
+<!-- <h1 id="heading">Swati</h1>
+    <button onclick="changeheading()">Change the Element</button> --> 
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="form1.js"></script>
+    </head>
+    <body>
+        <div class="form1">
+            <label>Enter your name</label><br>
+            <input type="text" id="name_ip"><br>
+            <label>Enter your password</label><br>
+            <input type="password"><br>
+            <button onclick="sign()">Sign In</button>
+            <p id="result1"></p>
+        </div>
+    </body>
+    </html>
+
+
+*js code of form*
+// document.getElementById("heading").style.color = 'red'
+
+
+
+// function changeheading(){
+//     const heading = document.getElementById("heading")
+//     heading.textContent = "Saurav"
+//     heading.style.color = 'red'
+// }
+
+// parsInt
+
+// function onIncreament(){
+// let p_element = document.getElementById("para");
+// let p_text = p_element.textContent
+// let c_text = parseInt(p_text) + 1
+// p_element.textContent = c_text
+// p_element.style.color = 'red'
+// }
+
+// function onDecreament(){
+// let p_element = document.getElementById("para");
+// let p_text = p_element.textContent
+// let c_text = parseInt(p_text) - 1
+// p_element.textContent = c_text
+// p_element.style.color = 'green'
+    
+// }
+
+// function onReset(){
+// const para = document.getElementById("para")
+// para.textContent = '0'
+// para.style.color = 'black'
+// }
+
+
+// function signn(){
+//     let inputelement = document.getElementById("nameinput");
+//     let result = inputelement.value;
+//     console.log(result);
+// }
+
+
+function sign(){
+    let name=document.getElementById("name_ip");
+    let name_var=name.value;
+    console.log(name_var);
+   
+}
+
+
+*html code*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="temp.js" defer></script> -->
+</head>
+<body>
+    <div class="form1">
+        <label>Enter your name</label><br>
+        <input type="text" id="name_ip"><br>
+        <label>Enter your password</label><br>
+        <input type="password"><br>
+        <button onclick="signIn()">Sign In</button>
+        <p id="result1"></p>
+    </div>
+    <script>
+        function signIn(){
+        let name=document.getElementById("name_ip");
+        let result = document.getElementById("result")
+        let name_var=name.value;
+        console.log(name_var);
+        console.log(result)
+}
+    </script>
+</body>
+</html>
+
+**a part of code of checker**
+if (isNaN(inputvalue) || inputvalue < 1 || inputvalue > 100) {
+                console.log("Please enter a valid number between 1 and 100.");
+                return;
+            }
+    
+            attempts++;
+            
+            
+**checker code**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="input">
+        <input type="number" id="inputnumber"><br>
+        <button onclick="checker()">Check</button>
+        <p id="paragraph"></p>
+        <button id="resetButton" style="display: none;">Reset</button>
+    </div>
+    
+    <script>
+        let num = Math.ceil(Math.random() * 100); 
+        let attempts = 0;
+        const maxAttempts = 10; 
+    
+        function checker() {
+            let inputnumber = document.getElementById("inputnumber");
+            let inputvalue = parseInt(inputnumber.value); 
+            let paragraph = document.getElementById("paragraph");
+    
+            if (inputvalue < 1 || inputvalue > 100) {
+                paragraph.textContent = "Please enter a valid number between 1 and 100";
+            }
+    
+            attempts++;
+    
+            if (inputvalue === num) 
+            {
+                paragraph.textContent = "Congratulations! You guessed the number correctly in " + attempts + " attempts.";
+            } 
+            else 
+            {
+                if (attempts >= maxAttempts) 
+                {
+                    paragraph.textContent = "You don't know binary search. The correct number was " + num;
+                } 
+                else 
+                {
+                    if (inputvalue < num) 
+                    {
+                        paragraph.textContent = "Try a higher number. Attempts left: " + (maxAttempts - attempts);
+                    } 
+                    else 
+                    {
+                        paragraph.textContent = "Try a lower number. Attempts left: " + (maxAttempts - attempts);
+                    }
+                }
+            }
+    
+            inputnumber.value = "";
+    
+            document.getElementById("resetButton").style.display = "inline";
+        }
+    
+        document.getElementById("resetButton").onclick = function() {
+            document.getElementById("paragraph").textContent = "";
+            this.style.display = "none";
+        };
+    </script>
+    
+</body>
+</html>
+
+**js code of print user name after submision**
+function signIn(){
+    let name=document.getElementById("name_ip");
+    let name_var=name.value;
+    console.log(name_var);
+   
+}**css code of counter**
+.container{
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+}
+
+
+
+
+
+

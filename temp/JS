@@ -1,0 +1,14 @@
+Type conversion
+1. Explicit conversion:- 
+	The conversion takes place manually or explicitly by typing the method or function name before converting the values, it is known as Explicit Conversion.
+	1. To string conversion: The number is converted to a single string when we need it.
+		1. String():-
+			The String() method is a Global method, and it is used to convert numbers to strings.
+It can also be used to convert literals and expressions.
+eg., String(vlaue to convert);
+
+		2.toString():- same as String method.
+syntax:- number.toString();
+
+		3. toExponential:- convert the number into a string exponential symbol(e+number).
+syntax:- number.toExpontial();

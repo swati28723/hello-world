@@ -72,6 +72,7 @@
 // export default App;
 
 
+<<<<<<< HEAD
 // import "./App.css";
 // import HomePage from "./HomePage";
 // import AboutLittleLemon from "./AboutLittleLemon";
@@ -96,6 +97,32 @@
 // };
 
 // export default App;
+=======
+import "./App.css";
+import HomePage from "./HomePage";
+import AboutLittleLemon from "./AboutLittleLemon";
+import Contact from "./Contact";
+import { Routes, Route, Link } from "react-router-dom";
+
+function App() {
+  return (
+    <div> 
+	  <nav>
+      <Link to="/" className="nav-item">HomePage</Link>
+      <Link to="/about" className="nav-item">About Little Lemon</Link>
+      <Link to="/contact" className="nav-item">Contact</Link>
+	  </nav>
+      <Routes> 
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/about" element={<AboutLittleLemon />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
+    </div>
+  );
+};
+
+export default App;
+>>>>>>> 005330b (I am updating HCJ by adding all my internship work here)
 
 
 // function App(){
@@ -176,6 +203,7 @@
 
 
 //create an audio/video component
+<<<<<<< HEAD
 import './App.css';
 import ReactPlayer from 'react-player';
 
@@ -195,3 +223,24 @@ function App(){
 }
 
 export default App;
+=======
+// import './App.css';
+// import ReactPlayer from 'react-player';
+
+// function App(){
+//   const vidurl = "https://www.youtube.com/watch?v=UjtTYsfmj44";
+
+//   return (
+//     <div className='App'>
+//       <h1>React Player example</h1>
+//       <ReactPlayer
+//         url = {vidurl}
+//         playing={false}
+//         volume={0.5}
+//       />
+//     </div>
+//   );
+// }
+
+// export default App;
+>>>>>>> 005330b (I am updating HCJ by adding all my internship work here)

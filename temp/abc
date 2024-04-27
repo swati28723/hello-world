@@ -1,0 +1,116 @@
+const fs = require('fs');
+const input = require('readline-sync');
+
+function addBloodDonation(donor, bloodType, date) {
+    let bloodData = readBloodData();
+    bloodData.push({ donor, bloodType, date });
+    writeBloodData(bloodData);
+    console.log("Added a blood donation entry:", { donor, bloodType, date });
+}
+
+
+function removeBloodDonation(donor) {
+    let bloodData = readBloodData();
+    bloodData = bloodData.filter(entry => entry.donor !== donor);
+    writeBloodData(bloodData);
+    console.log(`Removed blood donation entry for ${donor}`);
+}
+
+
+function checkAvailability(bloodType) {
+    let bloodData = readBloodData();
+    let bloodBank = bloodData.map(entry => entry.bloodType);
+    if (bloodBank.includes(bloodType)) 
+    {
+        console.log("Available");
+    } 
+    else 
+    {
+        console.log("Not Available");
+    }
+}
+
+
+function readBloodData() {
+    try {
+        const data = fs.readFileSync('bloodData.json', 'utf8');
+        return JSON.parse(data);
+    } catch (err) {
+        return [];
+    }
+}
+
+
+function writeBloodData(data) {
+    fs.writeFileSync('bloodData.json', JSON.stringify(data, null, 2));
+}
+
+
+const op = input.questionInt("Enter op: ");
+
+if (op === 0) 
+{
+    const donor = input.question("Enter donor name: ");
+    const bloodType = input.question("Enter blood type: ");
+    const date = input.question("Enter date (YYYY-MM-DD): ");
+    addBloodDonation(donor, bloodType, date);
+} 
+else if (op === 1) 
+{
+    const donor = input.question("Enter donor name: ");
+    removeBloodDonation(donor);
+} 
+else 
+{
+    const bloodType = input.question("Enter blood type: ");
+    checkAvailability(bloodType);
+} 
+
+
+// function addBloodDonation(donar, bloodType, date, array) {
+//     array.push({donar, bloodType, date})
+//     console.log("Added a blood donation entry:- ", array);
+// }
+
+// function removeBloodDonation(donor, array) {
+//     array = array.filter(entry => entry.donor !== donor);
+//     console.log(`Removed blood donation entry for ${donor}:-`, array);
+// }
+
+// function checkAvailability(bloodType) {
+    
+//     let bloodBank = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
+
+//     if (bloodBank.includes(bloodType)) 
+//     {
+//         console.log("Available");
+//     } 
+//     else 
+//     {
+//         console.log("Not Available");
+//     }
+// }
+
+// const input = require("readline-sync");
+
+// let op = input.questionInt("Enter op: ");
+
+// let array = [{donor: "John", bloodType: "A+", date: "2024-04-06"}, {donor: "Swati", bloodType: "A-", date: "2024-04-07"}]
+
+// if (op == 0)
+// {
+//     let donar = input.question("Enter donar name: ");
+//     let bloodType = input.question("Enter bloodtype: ");
+//     let date = input.question("Enter a date: ");
+//     addBloodDonation(donar, bloodType, date, array);
+// }
+// else if (op==1)
+// {
+//     let donar = input.question("Enter donar name: ");
+//     removeBloodDonation(donar, array);
+// }
+// else
+// {
+//     let bloodType = input.question("Enter bloodtyoe: ");
+//     checkAvailability(bloodType);
+// }
